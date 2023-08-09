@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:sans-serif;
+            margin: auto;
+        }
+        body{
+            background-color: rgba(17, 14, 14, 0.9);
+           
+        }
+         div .container{
+           
+        }
+        form{
+            margin-top: 10%;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        div input{
+           background-color:black ;
+           color: white;
+            border-radius: 20px;
+            margin: 10px auto;
+            height: 30px;
+            text-align: center;
+
+
+        }
+        div #contentup{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div a{
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+         div input[type="submit"]{
+            width: 100px;
+            background-image: linear-gradient(to right,red,yellow);
+        }
+        div h1{
+            color: white;
+        }
+        form:hover{
+            background-color: rgb(27, 23, 23);
+            border-radius: 20px;
+            animation-name:anim1 ;
+            animation-timing-function: ease-in;
+            animation-duration: 1s;
+            animation-direction: normal;
+            animation-fill-mode: initial;
+            animation-iteration-count: 1;
+        }
+        @keyframes anim1{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <form action="">
+        
+        <div class=".container">
+            <h1>Login</h1>
+            <div class="content1">
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="content1">
+                <input type="password" placeholder="enter password">
+            </div>
+            <div class="content1">
+                <input type="submit" value="Sign-in">
+            </div>
+            <div id="contentup">
+                <a href="#">Forget password?</a>
+                <a href="#">SignUp</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

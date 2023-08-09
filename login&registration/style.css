@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url(./image/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.complete{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    background-color: red;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 99;
+}
+header h2{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    /* user-select: none; */
+}
+.navigation a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.navigation .btn{
+    width: 100px;
+    margin-left: 40px;
+    background: transparent;
+    border: 1px solid #fff;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.navigation .btn:hover{
+    background-color: rgb(236, 222, 222);
+    color: #130a0a;
+    cursor: pointer;
+}
+.main-content{
+    width: 300px;
+    height: auto;
+    padding:0 10px;
+    background:transparent;
+    backdrop-filter: blur(20px);
+}
+.main-content h2{
+    text-align: center;
+    color: #fff;
+    margin-top: 5px ;
+}
+.content{
+    position: relative;
+}
+.content{
+    display: flex;
+    margin: 10px;
+}
+.content input{
+    width: 100%; 
+    padding: 10px;
+    background: transparent;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  border-bottom: 1px solid #fff;
+    
+}
+.content .bx{
+    position: absolute;
+   right: 15px;
+   top: 12px;
+   color: #fff;
+}
+.forget{
+    display: flex;
+    justify-content: space-between;
+}
+.register{
+    display: flex;
+    margin: 15px;
+}
+.forget a,.register a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+
+}
+.register:hover a{
+    text-decoration: underline;
+}
+.forget a:hover{
+    text-decoration: underline;
+}
+.button input{
+    padding: 10px 0;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+input:placeholder-shown{
+    font-size: 18px;
+    font-weight: 600;
+    color: #e2d1d1;
+    
+}
+.button input[value="Login"]{
+    font-size: 20px;
+    font-weight: 600;
+}
+@media screen and (max-width:768px) {
+    .complete{
+       
+        display:flex;
+        align-self: center;
+        justify-self: center;
+        position: relative;
+
+    }
+    header{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+    header h2{
+        position: absolute;
+        left: 0;
+    }
+    .navigation a{
+       display: flex;
+       
+
+    }
+    .navigation .btn{
+        opacity: 0;
+    }
+    .main-content{
+        margin: auto;
+        display: flex;
+       
+    }
+}

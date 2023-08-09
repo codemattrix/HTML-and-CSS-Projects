@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            
+            height: auto;
+            
+        }
+        .container{
+            margin: 0 auto;
+            width: 90%;
+            height: auto;
+        }
+        .sky{
+            padding: 100px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .grass{
+            padding: 50px;
+            background-color: green;
+            position: relative;
+        }
+        .road{
+            border-top: 10px solid rgb(112, 108, 108);
+            padding: 100px;
+            background-color: rgb(31, 29, 29);
+            border-bottom: 10px solid rgb(112, 103, 103);
+            position: relative;
+        }
+        .img1{
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            top: -80px;
+            left: 0px;
+            animation: anim 4s ease-in;
+        }
+        .line{
+            margin: 0;
+            width: 100%;
+            border: 6px dashed rgb(112, 103, 103);
+            position: absolute;
+            left: 0px;
+           
+
+        }
+
+        @keyframes anim{
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mario">
+            <div class="sky"></div>
+            <div class="grass"></div>
+            <div class="road">
+                
+                <div class="line">
+                    <img class="img1" src="./Mario-hard-bike_1325957122.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
